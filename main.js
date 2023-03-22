@@ -1,6 +1,6 @@
 let productos = [];
 
-fetch("./js/productos.json")
+fetch("./productos.json")
     .then(response => response.json()) //Aquí poner la otra tecnica aprendida de fetch ASYNC AWAIT
     .then(data => {
         productos = data;
