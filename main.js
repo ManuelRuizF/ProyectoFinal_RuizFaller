@@ -88,9 +88,9 @@ function agregarAlCarrito(e) {
         text: "Producto agregado",
         duration: 3000,
         close: true,
-        gravity: "top", // `top` or `bottom`
-        position: "right", // `left`, `center` or `right`
-        stopOnFocus: true, // Prevents dismissing of toast on hover
+        gravity: "top", 
+        position: "right", 
+        stopOnFocus: true, 
         style: {
           background: "linear-gradient(to right, #4b33a8, #785ce9)",
           borderRadius: "2rem",
@@ -98,10 +98,10 @@ function agregarAlCarrito(e) {
           fontSize: ".75rem"
         },
         offset: {
-            x: '1.5rem', // horizontal axis - can be a number or a string indicating unity. eg: '2em'
-            y: '1.5rem' // vertical axis - can be a number or a string indicating unity. eg: '2em'
+            x: '1.5rem', 
+            y: '1.5rem' 
           },
-        onClick: function(){} // Callback after click
+        onClick: function(){} 
       }).showToast();
 
     const idBoton = e.currentTarget.id;
@@ -124,3 +124,22 @@ function actualizarNumerito() {
     let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
     numerito.innerText = nuevoNumerito;
 }
+
+
+
+
+  window.addEventListener('load', function() {
+    setTimeout(function() {
+      Swal.fire({
+  title: '¡Bienvenido a Regala Bodas!',
+  text: '¡Elije tus regalos, elije la boda, y termina con un mensaje para los novios!',
+  imageUrl: 'https://images.unsplash.com/photo-1606800052052-a08af7148866?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+  imageWidth: 400,
+  imageHeight: 200,
+  imageAlt: 'Custom image',
+})
+    }, 4000);
+  });
+
+
+  
