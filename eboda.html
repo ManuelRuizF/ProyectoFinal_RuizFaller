@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarpiShop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="header-mobile">
+            <h1 class="logo">Regala Bodas</h1>
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
+        <aside>
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x"></i>
+            </button>
+            <header>
+                <h1 class="logo">Regala Bodas</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="boton-menu boton-volver" href="./index.html">
+                            <i class="bi bi-arrow-return-left"></i> Menú Principal
+                        </a>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-carrito active" href="./eboda.html">
+                            <i class="bi bi-cart-fill"></i> Elegir boda
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">Hecho por Manuel Ruiz</p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="titulo-principal">Encuentra la boda por nombre</h2>
+            <div class="contenedor bodas"  >
+                
+                    <p>Nombre del Novio <i class="bi bi-gender-male"></i></p><br>
+                    <input type="text" id="man-first-name" class= "nombre-novio" placeholder="Nombre"> 
+                    
+                    <input type="text" id="man-last-name" class= "apellido-novio" placeholder="Apellido"> 
+                    <br>
+            </div>
+            
+            <div >
+
+                    <br> <p>Nombre de la Novia <i class="bi bi-gender-female"></i></p><br>
+                    <input type="text2" id="woman-first-name" class= "nombre-novia" placeholder="Nombre"> 
+                    
+                    <input type="text2" id="woman-last-name" class= "apellido-novia" placeholder="Apellido">
+
+            </div>  
+            <br>
+            <button class="wedding" id="find-button">Buscar</button>
+        </main>
+    </div>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./eboda.js"></script>
+    <script src="./menu.js"></script>
+</body>
+</html>

@@ -401,3 +401,46 @@ main {
         grid-template-columns: 1fr;
     }
 }
+
+input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #a1e3f1;
+    border: 2px solid #7256f0;
+    font-size: 16px;
+    
+    outline: none;
+  }
+
+  input[type="text"]::placeholder {
+    color: rgb(255, 255, 255);
+  }
+
+  input[type="text2"] {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f49bd0;
+    border: 2px solid #f056b3;
+    font-size: 16px;
+    
+    outline: none;
+  }
+
+  input[type="text2"]::placeholder {
+    color: rgb(255, 255, 255);
+  }
+
+  button.wedding {
+    padding: 10px 20px;
+    border: #055c24;
+    border-radius: 10px;
+    background-color: #34f734;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.wedding:hover {
+    background-color: #068317;
+  }
