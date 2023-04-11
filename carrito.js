@@ -131,6 +131,16 @@ function actualizarTotal() {
 botonComprar.addEventListener("click", comprarCarrito);
 function comprarCarrito() {
 
+
+    Swal.fire({
+        title: '¡Gracias por su compra!',
+        icon: 'sucess',
+        html: `Mañana enviaremos los ${productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0)} productos.`,
+        showCancelButton: true,
+        
+    })
+
+
     productosEnCarrito.length = 0;
     localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
     
